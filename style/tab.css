@@ -1,0 +1,317 @@
+/* ############################################################################################################################################ */
+@media screen and (max-width:1190px){
+    /* ###################
+    ### HEADER SECTION ### 
+    ######################*/
+    .H-text .right .common{
+        width: 100%;
+    }
+    /* ###################
+    ### PROJECT SECTION ### 
+    ######################*/
+    .proj .left h1 {
+        font-size: 40px;
+    }
+    .proj .left p.sub{
+        font-size: 18px;
+    }
+    .proj .left p.sub::after{
+        right: -25px;
+    }
+    .proj .left p {
+        font-size: 18px;
+        line-height: 40px;
+    }
+    
+}
+/* ############################################################################################################################################ */
+@media screen and (max-width:1036px){
+    /* ###################
+    ### SERVICES SECTION ### 
+    ######################*/
+    .S-right h1{
+        font-size: 50px;
+    }
+    .reverse h1 {
+        left: 45px;
+        width: 200%;
+        top: 10px;
+    }
+    
+    .f-wrapper .f-right{
+        width: 58%;
+    }
+    /* ###################
+    ### PROJECTS SECTION ### 
+    ######################*/
+    .proj .left p.sub::after{
+        right: -70px;
+    }
+}
+
+/* ############################################################################################################################################ */
+@media screen and (max-width:900px){
+    html{
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+    /* ###################
+    ### HEADER SECTION ### 
+    ######################*/
+    .navbar{
+        grid-template-areas: 'H-left H-left burger';
+        position: relative;
+        
+        
+    }
+    div.burger button  {
+        display: block;
+    }
+    .H-right{
+        display: none;
+    }
+    .H-middle {
+        background: var(--dark-color);
+        padding: 15px 0;
+        border: 2px solid white;
+    }
+    .H-middle {
+        position: absolute;
+        top: 85px;
+        right: 0px;
+        padding: 0;
+        transform: translateY(-350px);
+        transition: .5s;
+        opacity: 0;
+    }
+    
+    .show{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    h1.heroH1{
+        font-size: 120px;
+    }
+    .H-text {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .H-text .right {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .H-text .right .common {
+        width: 100%;
+    }
+
+
+    .H-text .right .common{
+        width: 100%;
+    }
+
+    .H-middle ul {flex-direction: column;}
+    
+    .H-middle ul li {
+        min-width: 300px;
+        min-height: 40px;
+        border-bottom: 2px solid white;
+        text-align: center;
+       padding:20px 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .burger {
+        position: absolute;
+        right: 5%;
+        top: 30%;
+    }
+
+    .H-BG-left {
+        display: none;
+    }
+    
+    .H-BG-right {
+        width: 100%;
+    }
+    .H-text .right .common {
+        margin-bottom: 30px;
+    }
+    
+    /* ###################
+    ### ABOUT SECTION ### 
+    ######################*/
+    .A-wrapper {
+        flex-direction: column;
+    }
+    
+    .A-left {
+        margin: 50px 0;
+        width: 70%;
+    }
+    .A-right {
+        width: 70%;
+        margin-bottom: 50px;
+        text-align: center;
+        
+    }
+    button.border-btn {
+        width: 100%;
+    }
+    /* ###################
+    ### SERVICES SECTION ### 
+    ######################*/
+    .grid-wrapper.serv {
+        grid-template-areas:
+        "S-left S-middle"
+        "S-right S-right";
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .S-right{
+        padding-top: 0;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .S-right h1 {
+        position: unset;
+        margin-top: 0;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    
+    .S-right button {
+        width: 50%;
+    }
+    .S-right {
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin: 50px 0;
+        padding-top: 0;
+        
+    }
+    .S-right::after {
+        height: 3px;
+        width: 70%;
+        bottom: unset;
+        top: -20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .grid-wrapper.serv.reverse {
+        grid-template-areas:
+        "S-left S-middle"
+        "S-right S-right";
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .reverse .S-right{
+        padding-top: 0;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .reverse .S-right h1 {
+        position: unset;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    .reverse .S-right button {
+        width: 50%;
+    }
+    .reverse .S-right {
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin: 50px 0;
+        padding-top: 0;
+        
+    }
+    .reverse .S-right::before {
+        height: 3px;
+        width: 70%;
+        bottom: unset;
+        top: -20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    /* ###################
+    ### PROJECT SECTION ### 
+    ######################*/
+    .proj {
+        grid-template-areas:
+        "p-middle p-right"
+        "p-left p-left";
+    }
+    
+    .proj .left {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .proj .left p.sub::after {
+        bottom: -30px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 200px;
+    }
+    /* ###################
+    ### PROJECT SECTION ### 
+    ######################*/
+    .f-wrapper {
+        flex-direction: column;
+    }
+    
+    .f-wrapper .f-left {
+        width: 100%;
+        margin: 50px 0;
+        text-align: center;
+    }
+    
+    .f-wrapper .f-right {
+        width: 60%;
+    }
+    
+    .f-left a::after {
+        left: -100%;
+        right: 0;
+        margin: auto;
+        bottom: 0;
+    }
+
+    .f-wrapper .f-right .left{
+        grid-area: f-left;
+    }
+    .f-wrapper .f-right .middle{
+        grid-area: f-middle;
+    }
+    .f-wrapper .f-right .follow{
+        grid-area: follow;
+        margin: 50px 0;
+        text-align: center;
+    }
+    .f-wrapper .f-right{
+        display: grid;
+        grid-template-areas:
+        "f-left f-middle" 
+        "follow follow";
+    }
+
+
+}
